@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de [Seu Nome]</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1>Olá, eu sou Matheus lopes </h1>
+            <p>Desenvolvedor Web com paixão por criar soluções inovadoras.</p>
+            <a href="#contact" class="cta-button">Entre em Contato</a>
+        </section>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor web com experiência em HTML,CSS, Javascript e Python.
+                Atualmente sou estagiario de TI, trabalho como ajudante e professor para alunos de 5 a 14 anos, ajudo com aulas de robótica e programação, Tenho uma paixão por criar soluções eficientes e usáveis para problemas complexos. Trabalhei em projetos variados..</p>
+                <br>
+                <p>  <h1 id="pro"> veja algumas imagens abaixo </h1></p>
+        </section>
+        <img src="ensina.jpg" alt="">
+        <img src="losa.jpg" alt="">
+        <img src="pro.jpg" alt="">
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1. Desenvolvido usando [tecnologias].</p>
+                <a href="link-do-projeto-1" target="_blank">em breve</a>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2. Desenvolvido usando [tecnologias].</p>
+                <a href="link-do-projeto-2" target="_blank">em breve</a>
+            </div>
+            <!-- link para ver meus projetos -->
+        </section>
+        <p> <i id="git"> github - <a href="https://github.com/matheuslopesdev019">clique aqui para acessar meu github</a></i></p>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Se você quiser saber mais sobre meu trabalho ou discutir uma possível colaboração, sinta-se à vontade para entrar em contato.</p>
+            <form action="matheuslopec@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+<br><br><br>
+    <footer>
+        <p>&copy; 2024 Matheus Lopes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

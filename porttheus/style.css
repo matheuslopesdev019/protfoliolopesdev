@@ -1,0 +1,175 @@
+/* Estilo básico do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #000000;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #eeffee;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Navegação no cabeçalho */
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #deffe8;
+    text-decoration: none;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Título do cabeçalho */
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: slideIn 1s ease-out;
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #00ff00;
+    color: #000000;
+    font-family: cursive;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Estilo do main */
+main {
+    padding: 2rem;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Projeto individual */
+.project {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do projeto */
+img {
+    width: 50%;
+    height: auto;
+    border:6px solid rgb(30, 255, 0);
+    border-top-left-radius: 0%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animações */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-size: 25px;    
+}
+
+#contact {
+    color: white;
+    text-align: center;
+}
+
+#pro {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: cursive;
+}
+
+#git {
+    color: #deffe8;
+} 
